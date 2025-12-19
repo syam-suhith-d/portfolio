@@ -5,8 +5,9 @@
     /* In light mode, ensure it's readable */
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
     font-weight: 600;
-    width: 400px;
-    /* Increased fixed width */
+    width: 350px;
+    max-width: 100%;
+    /* Responsive width */
     height: 1.2em;
     /* Fixed height to prevent vertical shift */
     /* Fixed width to prevent shift */

@@ -11,6 +11,28 @@
     font-size: 1.2rem;
 }
 
+@media (max-width: 768px) {
+    .emailDirect {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .socials {
+        gap: 0.8rem;
+    }
+
+    .socialCard span {
+        display: none;
+        /* Hide text on small screens, show only icon? Or just make smaller */
+    }
+
+    .socialCard {
+        padding: 10px;
+    }
+}
+
 .emailDirect {
     display: inline-flex;
     align-items: center;
