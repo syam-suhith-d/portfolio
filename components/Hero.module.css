@@ -1,0 +1,127 @@
+.hero {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    /* Ensure text is above background animation */
+}
+
+.title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.nameStyle {
+    background: linear-gradient(to right, #9d4edd, #ff006e, #00b4d8);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 3s linear infinite;
+    display: inline-block;
+    position: relative;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.subtitle {
+    margin-left: 150px;
+    font-size: 2rem;
+    color: var(--foreground);
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+:global([data-theme='light']) .subtitle {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.highlight {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.description {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    color: var(--foreground);
+    opacity: 0.8;
+    font-size: 1.1rem;
+}
+
+:global([data-theme='light']) .description {
+    color: #333333;
+    font-weight: 500;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cta {
+    background: var(--primary);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: var(--transition);
+    border: 2px solid var(--primary);
+}
+
+.cta:hover {
+    background: transparent;
+    box-shadow: 0 0 15px var(--primary);
+}
+
+.secondaryCta {
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: var(--transition);
+    border: 2px solid var(--foreground);
+    color: var(--foreground);
+}
+
+.secondaryCta:hover {
+    background: var(--foreground);
+    color: var(--background);
+}
+
+.resumeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+    transition: var(--transition);
+    gap: 8px;
+    font-weight: 600;
+}
+
+.resumeBtn:hover {
+    background: var(--secondary);
+    color: white;
+    box-shadow: 0 0 15px var(--secondary);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+}

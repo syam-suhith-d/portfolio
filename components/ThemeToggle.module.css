@@ -1,0 +1,23 @@
+.toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.toggle:hover {
+    transform: rotate(15deg) scale(1.1);
+    background: rgba(255, 255, 255, 0.1);
+}

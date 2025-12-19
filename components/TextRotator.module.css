@@ -1,0 +1,43 @@
+.rotator {
+    display: inline-flex;
+    align-items: center;
+    color: var(--secondary);
+    /* In light mode, ensure it's readable */
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    width: 400px;
+    /* Increased fixed width */
+    height: 1.2em;
+    /* Fixed height to prevent vertical shift */
+    /* Fixed width to prevent shift */
+    display: inline-flex;
+    justify-content: flex-start;
+    /* Align text to left of box */
+    text-align: left;
+    vertical-align: bottom;
+    /* Align with baseline */
+}
+
+.text {
+    white-space: nowrap;
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink 1s step-end infinite;
+    color: var(--accent);
+    margin-left: 2px;
+    font-weight: 100;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,50 @@
+.projects {
+    position: relative;
+    /* Removed background to show bubbles */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.desc {
+    color: var(--foreground);
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--secondary);
+}
+
+.link {
+    color: var(--primary);
+    font-weight: bold;
+    margin-top: auto;
+    display: inline-block;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
